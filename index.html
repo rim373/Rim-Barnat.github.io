@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Security: strict Content-Security-Policy (GitHub Pages cannot send HTTP headers, so we use a meta tag) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark light">
+
+  <title>Rim Barnat – AI Research Engineer</title>
+  <meta name="description" content="Rim Barnat – AI engineer (machine learning, deep learning, reinforcement learning, multimodal AI). Open to research engineer positions in France.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Rim Barnat">R<span>·</span>B</a>
+    <nav aria-label="Main">
+      <a href="#about"><span data-l="en">About</span><span data-l="fr">Profil</span></a>
+      <a href="#experience"><span data-l="en">Experience</span><span data-l="fr">Expérience</span></a>
+      <a href="#projects"><span data-l="en">Projects</span><span data-l="fr">Projets</span></a>
+      <a href="#skills"><span data-l="en">Skills</span><span data-l="fr">Compétences</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button id="lang" type="button" aria-label="Switch language">FR</button>
+      <button id="theme" type="button" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow mono">
+        <span data-l="en">// AI Research Engineer · SUP'COM 2026</span>
+        <span data-l="fr">// Ingénieure de recherche en IA · SUP'COM 2026</span>
+      </p>
+      <h1>Rim <em>Barnat</em></h1>
+      <p class="lead">
+        <span data-l="en">I design, train and evaluate models for time series, reinforcement learning, computer vision and multimodal information.</span>
+        <span data-l="fr">Je conçois, entraîne et évalue des modèles pour les séries temporelles, l'apprentissage par renforcement, la vision par ordinateur et l'information multimodale.</span>
+      </p>
+      <p class="formula mono" aria-hidden="true">θ<sub>t+1</sub> = θ<sub>t</sub> − η ∇<sub>θ</sub> ℒ(θ<sub>t</sub>)</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact"><span data-l="en">Get in touch</span><span data-l="fr">Me contacter</span></a>
+        <a class="btn" href="#projects"><span data-l="en">See my work</span><span data-l="fr">Voir mes projets</span></a>
+        <button class="btn" id="print" type="button"><span data-l="en">Save as PDF</span><span data-l="fr">Enregistrer en PDF</span></button>
+      </div>
+
+      <ul class="stats">
+        <li><b data-count="915">915</b><span>TOEIC / 990</span></li>
+        <li><b>121<sup>st</sup></b><span data-l="en">of 2,100 · national prep ranking</span><span data-l="fr">sur 2 100 · classement prépa</span></li>
+        <li><b data-count="800">800</b><span>K+ <span data-l="en">images indexed</span><span data-l="fr">images indexées</span></span></li>
+        <li><b>16.76</b><span data-l="en">/20 · Baccalaureate, High Honors</span><span data-l="fr">/20 · Baccalauréat, Très Bien</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <h2><span class="idx mono">01</span><span data-l="en">About</span><span data-l="fr">Profil</span></h2>
+      <div class="grid two">
+        <p>
+          <span data-l="en">Artificial Intelligence engineer specialising in Machine Learning, Deep Learning and Multimodal Information Processing, graduating from the Higher School of Communication of Tunis (SUP'COM) in September 2026. I focus on algorithm design, model development and experimental validation to tackle complex scientific challenges.</span>
+          <span data-l="fr">Ingénieure en Intelligence Artificielle spécialisée en Machine Learning, Deep Learning et traitement de l'information multimodale, diplômée de l'École Supérieure des Communications de Tunis (SUP'COM) en septembre 2026. Je me concentre sur la conception d'algorithmes, le développement de modèles et la validation expérimentale pour relever des défis scientifiques complexes.</span>
+        </p>
+        <div class="card">
+          <h3 class="mono"><span data-l="en">Education</span><span data-l="fr">Formation</span></h3>
+          <ul class="plain">
+            <li><b>SUP'COM</b> · 2023–2026<br><small><span data-l="en">Engineering degree in ICT · High Honors</span><span data-l="fr">Diplôme d'ingénieur en TIC · Mention Très Bien</span></small></li>
+            <li><b>IPEI Monastir</b> · 2021–2023<br><small><span data-l="en">Mathematics &amp; Physics track · ranked 121/2,100</span><span data-l="fr">Filière Mathématiques-Physique · classée 121/2 100</span></small></li>
+            <li><b>Baccalaureate</b> · 2021<br><small><span data-l="en">Mathematics · 16.76/20 · High Honors</span><span data-l="fr">Mathématiques · 16,76/20 · Très Bien</span></small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="reveal">
+      <h2><span class="idx mono">02</span><span data-l="en">Experience</span><span data-l="fr">Expérience</span></h2>
+      <div class="timeline">
+
+        <article class="item">
+          <div class="when mono">04 → 09 / 2026</div>
+          <div class="body">
+            <h3>LINEACT CESI Lab <small>· Lyon, France</small></h3>
+            <p class="role"><span data-l="en">Final-year internship (PFE)</span><span data-l="fr">Stage de fin d'études (PFE)</span> — Time Series · Reinforcement Learning</p>
+            <ul>
+              <li><span data-l="en">Built a station-level demand-forecasting dataset from the JCDecaux Open API enriched with weather data.</span><span data-l="fr">Construction d'un jeu de données de prévision de la demande par station à partir de l'API Open Data JCDecaux et de données météo.</span></li>
+              <li><span data-l="en">Integrated OpenRouteService to model distance-aware bike rebalancing in simulation.</span><span data-l="fr">Intégration d'OpenRouteService pour modéliser le rééquilibrage des vélos selon les distances réelles en simulation.</span></li>
+              <li><span data-l="en">Compared ML and DL models for time-series forecasting of weather-driven mobility demand.</span><span data-l="fr">Comparaison de modèles ML et DL pour la prévision de séries temporelles de la demande de mobilité liée à la météo.</span></li>
+              <li><span data-l="en">Designed a reinforcement-learning framework and agents to minimise redistribution cost and improve bike availability.</span><span data-l="fr">Conception d'un cadre d'apprentissage par renforcement et d'agents pour minimiser les coûts de redistribution et améliorer la disponibilité.</span></li>
+              <li><span data-l="en">Contributing to a research paper (in progress).</span><span data-l="fr">Contribution à un article scientifique (en cours).</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="when mono">09/2025 → 02/2026</div>
+          <div class="body">
+            <h3>Sagemcom <small>· Tunis</small></h3>
+            <p class="role"><span data-l="en">PFA internship</span><span data-l="fr">Stage PFA</span> — Python · PyTorch · Time Series · Transformers</p>
+            <ul>
+              <li><span data-l="en">Analysed electricity-consumption data for equipment-level energy disaggregation.</span><span data-l="fr">Analyse de données de consommation électrique pour la désagrégation par équipement.</span></li>
+              <li><span data-l="en">Developed a Transformer-based generative model synthesising consumption at 30-second resolution.</span><span data-l="fr">Développement d'un modèle génératif Transformer synthétisant la consommation à une résolution de 30 secondes.</span></li>
+              <li><span data-l="en">Evaluated it on two open-source high-resolution datasets.</span><span data-l="fr">Évaluation sur deux jeux de données open source à haute résolution temporelle.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="when mono">07 → 08 / 2025</div>
+          <div class="body">
+            <h3>Omnilink <small>· Tunis</small></h3>
+            <p class="role"><span data-l="en">Engineering internship</span><span data-l="fr">Stage ingénieur</span> — Next.js · React Native · FastAPI · Supabase · Ollama</p>
+            <ul>
+              <li><span data-l="en">Built a billing and inventory web interface, cutting manual reporting time by 60%.</span><span data-l="fr">Interface web de facturation et gestion des stocks, réduisant de 60 % le temps de reporting.</span></li>
+              <li><span data-l="en">Shipped a mobile app for real-time operational data with push alerts for unpaid invoices and critical stock.</span><span data-l="fr">Application mobile de données opérationnelles en temps réel avec alertes sur factures impayées et stocks critiques.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="when mono">07 → 08 / 2024</div>
+          <div class="body">
+            <h3>Actia <small>· Tunis</small></h3>
+            <p class="role"><span data-l="en">Engineering internship</span><span data-l="fr">Stage ingénieur</span> — Python · Open3D · RANSAC · nuScenes</p>
+            <ul>
+              <li><span data-l="en">Processed 3D LiDAR data from nuScenes for road-scene perception.</span><span data-l="fr">Traitement de données LiDAR 3D nuScenes pour la perception de scènes routières.</span></li>
+              <li><span data-l="en">Segmented point clouds with RANSAC to extract the road plane, and measured the impact of filtering on object detection accuracy and robustness.</span><span data-l="fr">Segmentation de nuages de points par RANSAC pour extraire le plan de la route et mesure de l'impact du filtrage sur la précision et la robustesse de la détection.</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2><span class="idx mono">03</span><span data-l="en">Projects</span><span data-l="fr">Projets</span></h2>
+      <div class="grid cards">
+
+        <article class="card tilt">
+          <p class="mono meta">12/2025 → 02/2026</p>
+          <h3><span data-l="en">Unsupervised Visual Anomaly Detection</span><span data-l="fr">Détection non supervisée d'anomalies visuelles</span></h3>
+          <p><span data-l="en">Pixel-level defect localisation from defect-free samples. Implemented DRAEM and benchmarked it against PatchCore with image- and pixel-level metrics.</span><span data-l="fr">Localisation de défauts au pixel près à partir d'échantillons sans défaut. Implémentation de DRAEM et comparaison avec PatchCore via des métriques image et pixel.</span></p>
+          <ul class="tags"><li>PyTorch</li><li>DRAEM</li><li>PatchCore</li></ul>
+        </article>
+
+        <article class="card tilt">
+          <p class="mono meta">11/2025 → 01/2026</p>
+          <h3><span data-l="en">Geospatial Emergency Dispatch Platform</span><span data-l="fr">Plateforme de dispatch d'urgence géospatiale</span></h3>
+          <p><span data-l="en">Route computation and dynamic dispatch of response units, with an event-driven architecture for real-time communication between citizens and emergency services.</span><span data-l="fr">Calcul d'itinéraires et affectation dynamique des unités d'intervention, avec une architecture événementielle pour la communication en temps réel.</span></p>
+          <ul class="tags"><li>FastAPI</li><li>PostGIS</li><li>pgRouting</li><li>ArcGIS</li><li>MQTT</li><li>WebSocket</li></ul>
+        </article>
+
+        <article class="card tilt">
+          <p class="mono meta">10 → 11/2025</p>
+          <h3><span data-l="en">Financial Fraud Detection System</span><span data-l="fr">Système de détection de fraude financière</span></h3>
+          <p><span data-l="en">Cloud ETL on AWS (Kafka, Lambda, S3), Athena analytics, XGBoost to flag suspicious transactions, Grafana monitoring and n8n alert automation.</span><span data-l="fr">ETL cloud sur AWS (Kafka, Lambda, S3), analyses Athena, XGBoost pour repérer les transactions suspectes, suivi Grafana et alertes automatisées avec n8n.</span></p>
+          <ul class="tags"><li>Kafka</li><li>XGBoost</li><li>AWS</li><li>Grafana</li><li>n8n</li></ul>
+        </article>
+
+        <article class="card tilt">
+          <p class="mono meta">09/2025</p>
+          <h3><span data-l="en">Multimodal Image Search Engine</span><span data-l="fr">Moteur de recherche d'images multimodal</span></h3>
+          <p><span data-l="en">Text and image-similarity search over 800K+ images, with a full ingestion, indexing and low-latency web pipeline.</span><span data-l="fr">Recherche par texte et par similarité d'image sur plus de 800K images, avec pipeline complet d'ingestion, d'indexation et interface web à faible latence.</span></p>
+          <ul class="tags"><li>YOLO</li><li>Elasticsearch</li><li>Kibana</li><li>Logstash</li><li>Express.js</li></ul>
+        </article>
+
+        <article class="card tilt wide">
+          <p class="mono meta">02 → 05/2025</p>
+          <h3><span data-l="en">Educational RAG Chatbot</span><span data-l="fr">Chatbot éducatif avec RAG</span></h3>
+          <p><span data-l="en">Hierarchical Retrieval-Augmented Generation over multiformat, multimodal documents (PDF, HTML, DOCX, PPTX, Markdown; text, images, tables, diagrams) with Weaviate. Hierarchical structuring improved retrieval relevance and latency; full-stack app with streaming LLM answers.</span><span data-l="fr">RAG hiérarchique sur documents multiformats et multimodaux (PDF, HTML, DOCX, PPTX, Markdown ; texte, images, tableaux, schémas) avec Weaviate. La structuration hiérarchique améliore la pertinence et la rapidité du retrieval ; application full-stack avec streaming des réponses du LLM.</span></p>
+          <ul class="tags"><li>Python</li><li>LLM</li><li>Weaviate</li><li>RAG</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2><span class="idx mono">04</span><span data-l="en">Skills</span><span data-l="fr">Compétences</span></h2>
+      <div class="grid cards">
+        <div class="card">
+          <h3 class="mono">Programming &amp; data</h3>
+          <ul class="tags"><li>Python</li><li>SQL</li><li>JavaScript / TypeScript</li><li>MATLAB</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="mono">Machine Learning</h3>
+          <ul class="tags"><li>Feature engineering</li><li>Model validation</li><li>Time series</li><li>Reinforcement learning</li><li>PyTorch</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="mono">LLM &amp; AI engineering</h3>
+          <ul class="tags"><li>RAG</li><li>Embeddings</li><li>Semantic search</li><li>Prompt engineering</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="mono">Data engineering</h3>
+          <ul class="tags"><li>Kafka</li><li>PostgreSQL</li><li>MongoDB</li><li>Elasticsearch</li><li>Vector DBs</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="mono">Backend &amp; apps</h3>
+          <ul class="tags"><li>FastAPI</li><li>Flask</li><li>React</li><li>Next.js</li><li>REST APIs</li></ul>
+        </div>
+        <div class="card">
+          <h3 class="mono">Cloud &amp; DevOps</h3>
+          <ul class="tags"><li>Docker</li><li>Git</li><li>AWS</li></ul>
+        </div>
+      </div>
+
+      <div class="grid two spaced">
+        <div class="card">
+          <h3 class="mono"><span data-l="en">Certifications</span><span data-l="fr">Certifications</span></h3>
+          <ul class="plain">
+            <li>MATLAB — <span data-l="en">Machine Learning with MATLAB</span><span data-l="fr">Apprentissage automatique avec MATLAB</span></li>
+            <li>NVIDIA — <span data-l="en">Data Engineering Pipelines</span><span data-l="fr">Pipelines d'ingénierie des données</span></li>
+            <li>AWS Academy — <span data-l="en">Data Engineering</span><span data-l="fr">Ingénierie des données</span></li>
+            <li>Google Cloud — <span data-l="en">Intro to LLMs, Responsible AI, MLOps for GenAI, Intro to GenAI</span><span data-l="fr">Introduction aux LLM, IA responsable, MLOps pour l'IA générative, introduction à l'IA générative</span></li>
+            <li>TOEIC — 915 / 990</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="mono"><span data-l="en">Languages</span><span data-l="fr">Langues</span></h3>
+          <ul class="bars">
+            <li><span><span data-l="en">Arabic</span><span data-l="fr">Arabe</span></span><i class="bar l5"></i><em><span data-l="en">Native</span><span data-l="fr">Maternelle</span></em></li>
+            <li><span><span data-l="en">French</span><span data-l="fr">Français</span></span><i class="bar l4"></i><em>B2</em></li>
+            <li><span><span data-l="en">English</span><span data-l="fr">Anglais</span></span><i class="bar l4"></i><em>B2 · TOEIC 915</em></li>
+            <li><span><span data-l="en">German</span><span data-l="fr">Allemand</span></span><i class="bar l2"></i><em>A2</em></li>
+            <li><span><span data-l="en">Turkish</span><span data-l="fr">Turc</span></span><i class="bar l2"></i><em>A2</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <h2><span class="idx mono">05</span>Contact</h2>
+      <div class="card contact">
+        <p>
+          <span data-l="en">Looking for a research engineer position in machine learning, deep learning and data science. Let's talk.</span>
+          <span data-l="fr">À la recherche d'un poste d'ingénieure de recherche en machine learning, deep learning et data science. Discutons-en.</span>
+        </p>
+        <ul class="links">
+          <li><a href="mailto:rim.barnat02@gmail.com">rim.barnat02@gmail.com</a></li>
+          <li><a href="mailto:rim.barnat@supcom.tn">rim.barnat@supcom.tn</a></li>
+          <li><a href="https://www.linkedin.com/in/rim-barnat" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/rimbarnat" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+        <p class="mono small">Saint-Ouen-sur-Seine, France</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="mono small">© 2026 Rim Barnat · <span data-l="en">No cookies, no trackers, no third-party scripts.</span><span data-l="fr">Aucun cookie, aucun traceur, aucun script tiers.</span></p>
+  </footer>
+</body>
+</html>
